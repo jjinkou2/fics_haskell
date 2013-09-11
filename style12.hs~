@@ -73,6 +73,7 @@ toGameState style12Str =
                 [x,y,z] -> GameClock (read x) (read y) (read z)
                 [x,y]   -> GameClock 0 (read x) (read y)
             trimParenthesis str = drop 1.take (length str -1) $ str
+            --        self.last_move_time_spent = _unpack_time_spent(self.last_move_time_spent_text)
 
 swap (x,y) = (y,x)
 
